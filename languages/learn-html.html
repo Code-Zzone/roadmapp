@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة تعلم HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #444;
+        }
+
+        .highlight {
+            color: red;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>دورة تعلم HTML</h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>1. مقدمة في HTML</h2>
+            <ul>
+                <li><span class="highlight">ما هو HTML؟</span></li>
+                <li><span class="highlight">البنية الأساسية لصفحة HTML</span></li>
+                <li><span class="highlight">العناصر (Elements) و الوسوم (Tags)</span>: مثل <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>.</li>
+                <li><span class="highlight">السمات (Attributes)</span>: مثل <code>id</code>, <code>class</code>, <code>src</code>, <code>href</code>, <code>alt</code>.</li>
+                <li><span class="highlight">تركيب الوثيقة HTML5</span>: مثل <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code> وأهمية ترتيبها.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>2. العناصر الأساسية (Basic HTML Elements)</h2>
+            <ul>
+                <li><span class="highlight">العناوين (Headings)</span>: <code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code>.</li>
+                <li><span class="highlight">الفقرات (Paragraphs)</span>: <code>&lt;p&gt;</code>.</li>
+                <li><span class="highlight">الروابط (Links)</span>: <code>&lt;a&gt;</code>.</li>
+                <li><span class="highlight">الصور (Images)</span>: <code>&lt;img&gt;</code>.</li>
+                <li><span class="highlight">القوائم (Lists)</span>:
+                    <ul>
+                        <li><span class="highlight">القائمة غير المرتبة</span>: <code>&lt;ul&gt;</code> و <code>&lt;li&gt;</code>.</li>
+                        <li><span class="highlight">القائمة المرتبة</span>: <code>&lt;ol&gt;</code> و <code>&lt;li&gt;</code>.</li>
+                        <li><span class="highlight">القوائم التعريفية</span>: <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>.</li>
+                    </ul>
+                </li>
+                <li><span class="highlight">الجدول (Tables)</span>: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>3. النماذج (Forms)</h2>
+            <ul>
+                <li><span class="highlight">إدخال النصوص (Text Inputs)</span>: <code>&lt;input&gt;</code>, مع أنواعها مثل <code>text</code>, <code>password</code>, <code>email</code>, <code>number</code>, <code>submit</code>.</li>
+                <li><span class="highlight">القوائم المنسدلة (Dropdowns)</span>: <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code>.</li>
+                <li><span class="highlight">مربعات الاختيار (Checkboxes)</span>: <code>&lt;input type="checkbox"&gt;</code>.</li>
+                <li><span class="highlight">أزرار الاختيار (Radio Buttons)</span>: <code>&lt;input type="radio"&gt;</code>.</li>
+                <li><span class="highlight">المربعات النصية (Textareas)</span>: <code>&lt;textarea&gt;</code>.</li>
+                <li><span class="highlight">إرسال النماذج (Form submission)</span>: <code>&lt;form&gt;</code>, <code>action</code>, <code>method</code>.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>4. التنسيق باستخدام HTML</h2>
+            <ul>
+                <li><span class="highlight">السمات النصية (Text Formatting)</span>: <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;mark&gt;</code>.</li>
+                <li><span class="highlight">الروابط الداخلية (Anchor Links)</span>: كيفية ربط الأجزاء المختلفة من الصفحة باستخدام <code>#</code> والعناصر الأخرى.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>5. الوسائط (Multimedia)</h2>
+            <ul>
+                <li><span class="highlight">الصور (Images)</span>: استخدام <code>&lt;img&gt;</code> مع السمات <code>src</code>, <code>alt</code>, <code>title</code>.</li>
+                <li><span class="highlight">الصوت والفيديو</span>: <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, مع السمات مثل <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>src</code>.</li>
+                <li><span class="highlight">الخطوط (Fonts)</span>: استخدام <code>&lt;font&gt;</code> أو طرق استخدام CSS لتغيير الخطوط.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>6. الـ Semantic HTML</h2>
+            <ul>
+                <li><span class="highlight">العناصر الدلالية (Semantic Elements)</span>: مثل <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;main&gt;</code>.</li>
+                <li><span class="highlight">تحسين SEO</span>: كيف تحسن الـ Semantic HTML SEO وتجعل الموقع أكثر وصولًا للأشخاص ذوي الإعاقات.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>7. HTML5</h2>
+            <ul>
+                <li><span class="highlight">الـ APIs الجديدة في HTML5</span>: مثل <code>localStorage</code>, <code>sessionStorage</code>, <code>geolocation</code>, <code>canvas</code>, <code>drag and drop</code>.</li>
+                <li><span class="highlight">التكامل مع JavaScript وCSS</span>: كيفية استخدام HTML5 مع JavaScript لتطوير واجهات تفاعلية.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>8. الوصول (Accessibility)</h2>
+            <ul>
+                <li><span class="highlight">الـ ARIA</span>: السمات مثل <code>role</code>, <code>aria-label</code>, <code>aria-hidden</code>.</li>
+                <li><span class="highlight">تحسين إمكانية الوصول</span>: التأكد من أن الموقع قابل للاستخدام لجميع الأشخاص، بما في ذلك ذوي الإعاقات.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>9. أفضل الممارسات (Best Practices)</h2>
+            <ul>
+                <li><span class="highlight">الكتابة النظيفة والمنظمة</span>: استخدام تعليقات لتوضيح الكود.</li>
+                <li><span class="highlight">الامتثال للمعايير (Standards Compliance)</span>: اتباع المعايير العالمية مثل W3C.</li>
+                <li><span class="highlight">التحقق من الكود (Validation)</span>: استخدام أدوات مثل <a href="https://validator.w3.org/" target="_blank">W3C Validator</a> للتحقق من صحة الكود.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>10. التكامل مع CSS و JavaScript</h2>
+            <ul>
+                <li><span class="highlight">CSS</span>: تعلم كيفية استخدام CSS لتنسيق صفحات HTML.</li>
+                <li><span class="highlight">JavaScript</span>: تعلم كيف تضيف وظائف تفاعلية باستخدام JavaScript.</li>
+                <li><span class="highlight">تقنيات متقدمة مثل Flexbox و Grid</span>: لتصميم تخطيطات معقدة.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>11. الأدوات والإطارات (Tools and Frameworks)</h2>
+            <ul>
+                <li><span class="highlight">أدوات تحرير الكود</span>: مثل Visual Studio Code, Sublime Text, أو Atom.</li>
+                <li><span class="highlight">إطارات العمل (Frameworks)</span>: مثل Bootstrap, Tailwind CSS لتسريع التطوير.</li>
+                <li><span class="highlight">نظام التحكم في الإصدارات (Version Control)</span>: مثل Git و GitHub.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>12. الممارسات المتقدمة في HTML</h2>
+            <ul>
+                <li><span class="highlight">الـ Web Components</span>: تعلم كيفية بناء مكونات قابلة لإعادة الاستخدام.</li>
+                <li><span class="highlight">استخدام Canvas و SVG</span>: لتطوير رسومات وأشكال تفاعلية في HTML.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>13. التدريب والتعليم</h2>
+            <ul>
+                <li><span class="highlight">التعلم المستمر</span>: متابعة المصادر والمقالات الجديدة في HTML وCSS وJavaScript.</li>
+                <li><span class="highlight">المشاركة في المجتمعات التعليمية</span>: مثل Stack Overflow، Reddit، GitHub.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>14. المشاريع العملية</h2>
+            <ul>
+                <li><span class="highlight">إنشاء مشاريع واقعية</span>: مثل بناء مواقع بسيطة ثم متقدمة.</li>
+                <li><span class="highlight">مواقع لعرض الأعمال (Portfolio)</span>: لتطبيق وتقديم مهاراتك.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>15. إعداد دورات تدريبية</h2>
+            <ul>
+                <li><span class="highlight">كتابة شروحات تعليمية</span>: تعلم كيفية شرح المفاهيم بشكل بسيط وواضح.</li>
+                <li><span class="highlight">التفاعل مع المتعلمين</span>: عبر إنشاء اختبارات، مشاريع، وأمثلة تفاعلية.</li>
+                <li><span class="highlight">إعداد مواد دراسية</span>: مثل عروض PowerPoint أو مستندات تعليمية باستخدام Markdown.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>حقوق النشر © 2025 دورة تعلم HTML</p>
+    </footer>
+</body>
+</html>

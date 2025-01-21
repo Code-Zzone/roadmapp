@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة تعلم React.js</title>
+    <!-- ربط Bootstrap مع الصفحة -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #444;
+        }
+
+        .highlight {
+            color: red;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>دورة تعلم React.js</h1>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <h2>1. مقدمة في React.js</h2>
+            <ul>
+                <li><span class="highlight">ما هو React.js؟</span>: هو مكتبة JavaScript لبناء واجهات المستخدم التفاعلية باستخدام مكونات صغيرة.</li>
+                <li><span class="highlight">لماذا React؟</span>: لأنها تتيح لك بناء واجهات تفاعلية بشكل سريع وأداء عالي باستخدام Virtual DOM.</li>
+                <li><span class="highlight">تركيب React</span>: يتم تركيب React باستخدام npm أو عن طريق أدوات مثل Create React App.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>2. المكونات (Components)</h2>
+            <ul>
+                <li><span class="highlight">المكونات في React</span>: يتم بناء واجهات المستخدم في React باستخدام مكونات (Components).</li>
+                <li><span class="highlight">مكونات دالة (Functional Components)</span>: هي مكونات تكتب كدوال بسيطة وتُستخدم بشكل أساسي في React.</li>
+                <li><span class="highlight">المكونات الكائنية (Class Components)</span>: هي مكونات يمكن أن تحتوي على حالة (State) ويمكنها استخدام طرق الحياة الخاصة بالمكون.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>3. JSX</h2>
+            <ul>
+                <li><span class="highlight">ما هو JSX؟</span>: هو امتداد للـ JavaScript يسمح لك بكتابة HTML داخل JavaScript، مما يجعل الكود أكثر وضوحًا.</li>
+                <li><span class="highlight">استخدام JSX</span>: في JSX، يجب أن يكون الكود داخل أقواس، وتُستخدم علامات HTML عادة مثل <code>&lt;div&gt;</code> و <code>&lt;h1&gt;</code>.</li>
+                <li><span class="highlight">الفرق بين JSX و HTML</span>: في JSX، لا يمكنك استخدام بعض الخصائص مثل `class` بل تستخدم `className` بدلاً منها.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>4. الحالة (State)</h2>
+            <ul>
+                <li><span class="highlight">ما هي الحالة (State)؟</span>: هي مجموعة من البيانات التي تتحكم في مظهر المكون وسلوكه.</li>
+                <li><span class="highlight">تحديث الحالة</span>: يمكنك تحديث الحالة باستخدام دالة <code>setState()</code>.</li>
+                <li><span class="highlight">التعامل مع البيانات داخل المكونات</span>: الحالة تمثل القيم المتغيرة التي تعتمد عليها الواجهة.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>5. الأحداث (Events)</h2>
+            <ul>
+                <li><span class="highlight">التعامل مع الأحداث في React</span>: React يوفر طريقة لالتقاط الأحداث مثل النقر على الأزرار باستخدام دوال مثل <code>onClick</code>.</li>
+                <li><span class="highlight">التعامل مع الإدخالات</span>: يمكنك ربط المدخلات بـ state باستخدام <code>onChange</code>.</li>
+                <li><span class="highlight">الفرق بين الأحداث في React و JavaScript التقليدي</span>: في React، يتم استخدام camelCase للأحداث مثل <code>onClick</code> و <code>onSubmit</code>.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>6. التوجيه (Routing) باستخدام React Router</h2>
+            <ul>
+                <li><span class="highlight">React Router</span>: مكتبة تُستخدم لإنشاء التوجيه بين الصفحات في تطبيقات React.</li>
+                <li><span class="highlight">أساسيات التوجيه</span>: يمكنك تحديد المسارات باستخدام <code>&lt;Route&gt;</code> و <code>&lt;Link&gt;</code> للتنقل بين الصفحات.</li>
+                <li><span class="highlight">التوجيه الديناميكي</span>: يمكنك استخدام متغيرات في المسار للحصول على بيانات ديناميكية مثل معرّفات المستخدمين.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>7. إدارة الحالة (State Management)</h2>
+            <ul>
+                <li><span class="highlight">إدارة الحالة المحلية</span>: يمكن إدارة الحالة داخل المكونات باستخدام <code>useState</code> (في المكونات الدالة).</li>
+                <li><span class="highlight">إدارة الحالة العالمية</span>: يمكن استخدام مكتبات مثل **Redux** لإدارة حالة التطبيقات الكبيرة والمعقدة.</li>
+                <li><span class="highlight">Context API</span>: تقدم React حلًا مدمجًا لإدارة الحالة عبر مكونات متعددة باستخدام **Context API**.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>8. مكونات الوظائف (Hooks)</h2>
+            <ul>
+                <li><span class="highlight">ما هي Hooks؟</span>: هي دوال تسمح باستخدام حالة (State) ومؤثرات جانبية (Side Effects) في المكونات الدالة.</li>
+                <li><span class="highlight">استخدام <code>useState()</code></span>: لتخزين البيانات المتغيرة داخل المكون.</li>
+                <li><span class="highlight">استخدام <code>useEffect()</code></span>: لتنفيذ التعليمات البرمجية التي تؤثر على المكون بعد التحديثات.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>9. تحسين الأداء</h2>
+            <ul>
+                <li><span class="highlight">التقليل من عمليات إعادة الرندر</span>: من خلال استخدام <code>React.memo</code> لتجنب إعادة الرندر غير الضرورية للمكونات.</li>
+                <li><span class="highlight">تأجيل تحميل البيانات (Lazy Loading)</span>: تحميل المكونات بشكل غير متزامن لتحسين الأداء باستخدام <code>React.lazy()</code>.</li>
+                <li><span class="highlight">تجنب إنشاء دوال جديدة داخل JSX</span>: لتقليل التكلفة الزائدة في إعادة الرندر.</li>
+            </ul>
+        </section>
+
+        <section class="container my-5">
+            <h2>10. أدوات تطوير React</h2>
+            <ul>
+                <li><span class="highlight">React Developer Tools</span>: هي إضافة للمتصفح تساعدك في تتبع الحالة والمكونات أثناء التطوير.</li>
+                <li><span class="highlight">Create React App</span>: هو أداة جاهزة لبدء مشاريع React بسهولة.</li>
+                <li><span class="highlight">Testing Libraries</span>: مثل **Jest** و **React Testing Library** لاختبار المكونات.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>حقوق النشر © 2025 دورة تعلم React.js</p>
+    </footer>
+
+    <!-- ربط ملفات JavaScript الخاصة بـ React -->
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-router-dom@6.4.1/umd/react-router-dom.min.js"></script>
+</body>
+</html>
