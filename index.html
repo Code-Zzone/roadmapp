@@ -1,39 +1,106 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Road Map Frontend</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
-<ul>
-    <li>
-    <h2>Languages</h2>
-      <a href="languages/learn-html.html" target="_blank">HTML</a>
-      <br>
-      <br>
-      <a href="languages/learn-CSS.html" target="_blank">CSS</a>
-      <br>
-      <br>
-      <a href="languages/learn-JS.html" target="_blank">JS</a>
-    </li>
-    <li>
-    <h2>Freamworks</h2>
-        <a href="freamworks/learn-bootstrab.html" target="_blank">Bootstrap</a>      
-        <br>
-        <br>
-        <a href="freamworks/learn-emmet-pug-html5_boilerplate.html" target="_blank">Emmet-pug-html5_boilerplate.html</a>  
-        
-                <br>        <br>
-        <a href="freamworks/learn-react.html" target="_blank">React.js</a>        
-              
-    </li>
-    <li>
-        <h2>Others</h2>
-        <a href="other/learn-ui-ux.html">UI UX</a>
-        <br>         <br>
-        <a href="other/get-jop.html">Get Jop</a>
-    </li>
-</ul>
+    <ul>
+        <li>
+            <h2>Languages</h2>
+            <input type="checkbox" id="htmlCheckbox">
+            <label for="htmlCheckbox">
+                <a href="languages/learn-html.html" target="_blank">HTML</a>
+            </label>
+            <br><br>
+            
+            <input type="checkbox" id="cssCheckbox">
+            <label for="cssCheckbox">
+                <a href="languages/learn-CSS.html" target="_blank">CSS</a>
+            </label>
+            <br><br>
+            
+            <input type="checkbox" id="jsCheckbox">
+            <label for="jsCheckbox">
+                <a href="languages/learn-JS.html" target="_blank">JS</a>
+            </label>
+        </li>
+        <li>
+            <h2>Frameworks</h2>
+            <input type="checkbox" id="bootstrapCheckbox">
+            <label for="bootstrapCheckbox">
+                <a href="freamworks/learn-bootstrab.html" target="_blank">Bootstrap</a>
+            </label>      
+            <br><br>
+            
+            <input type="checkbox" id="emmetPugCheckbox">
+            <label for="emmetPugCheckbox">
+                <a href="freamworks/learn-emmet-pug-html5_boilerplate.html" target="_blank">Emmet-pug-html5_boilerplate.html</a>
+            </label>
+            <br><br>
+            
+            <input type="checkbox" id="reactCheckbox">
+            <label for="reactCheckbox">
+                <a href="freamworks/learn-react.html" target="_blank">React.js</a>
+            </label>
+        </li>
+        <li>
+            <h2>Others</h2>
+            <input type="checkbox" id="uiUxCheckbox">
+            <label for="uiUxCheckbox">
+                <a href="other/learn-ui-ux.html">UI UX</a>
+            </label>
+            <br><br>
+            
+            <input type="checkbox" id="getJobCheckbox">
+            <label for="getJobCheckbox">
+                <a href="other/get-jop.html">Get Job</a>
+            </label>
+        </li>
+    </ul>
+
+    <script>
+        // Load stored checkbox states from localStorage
+        document.addEventListener("DOMContentLoaded", function() {
+            const checkboxes = [
+                "htmlCheckbox",
+                "cssCheckbox",
+                "jsCheckbox",
+                "bootstrapCheckbox",
+                "emmetPugCheckbox",
+                "reactCheckbox",
+                "uiUxCheckbox",
+                "getJobCheckbox"
+            ];
+
+            checkboxes.forEach(id => {
+                const checkbox = document.getElementById(id);
+                const storedState = localStorage.getItem(id);
+                if (storedState === 'true') {
+                    checkbox.checked = true;
+                }
+                
+                // Add an event listener to save the checkbox state
+                checkbox.addEventListener('change', function() {
+                    localStorage.setItem(id, checkbox.checked);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
